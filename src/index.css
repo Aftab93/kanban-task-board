@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #111111;
+}
+
+.dark {
+  --color-bg: #111111;
+  --color-text: #f1f1f1;
+}
+
+:root {
+  --color-bg: #f8fafc;           /* Light mode app background */
+  --color-text: #111827;         /* Light mode text */
+  --color-column-bg: #ffffff;    /* Light mode column background */
+
+  /* Dark mode overrides */
+  &.dark {
+    --color-bg: #1f2937;         /* Dark mode app background */
+    --color-text: #f3f4f6;       /* Dark mode text */
+    --color-column-bg: #2d3748;  /* Dark mode column background */
+  }
+}
+
+:root {
+  --color-bg: #f8fafc;
+  --color-text: #111827;
+  --color-column-bg: #ffffff;
+  --color-card-bg: #f9fafb;        /* Light card background */
+  --color-text-secondary: #4b5563; /* Light secondary text */
+
+  &.dark {
+    --color-bg: #1f2937;
+    --color-text: #f3f4f6;
+    --color-column-bg: #2d3748;
+    --color-card-bg: #374151;       /* Dark card background */
+    --color-text-secondary: #9ca3af;/* Dark secondary text */
+  }
+}
+
